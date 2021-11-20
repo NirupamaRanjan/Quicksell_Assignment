@@ -1,0 +1,38 @@
+.FormCont{
+    height: 250px;
+    width: 257px;
+    background-color: #ffffff;
+    box-shadow:1px 1px 3px 1px rgb(216, 215, 215);
+}
+.FormInput{
+    display: flex;
+    flex-direction: column;
+}
+
+label{
+    padding: 20px;
+}
+
+input{
+    border-style: none;
+    border-bottom: solid 1px #B24242;
+    margin-left: 10px;
+    width: 40px;
+}
+input:focus{
+    outline: none;
+}
+.button{
+    width: 100px;
+    height: 40px;
+    margin-left: 85px;
+    margin-top: 10px;
+    background-color:#B24242 ;
+    border-style: none;
+    color: #ffffff;
+    
+}
+.button:hover{
+     cursor: pointer;
+     background-color: teal;
+}

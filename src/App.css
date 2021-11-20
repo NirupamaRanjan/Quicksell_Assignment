@@ -1,38 +1,99 @@
 .App {
-  text-align: center;
+ box-sizing: border-box;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ margin-top: 100px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container{
+  margin-top: 100px;
+  background-color:'#FFFFFF';
+  box-shadow:1px 1px 3px 1px rgb(216, 215, 215);
+  height: 130px;
+  width: 257px;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  justify-content: space-between;
+  padding-top: 10px;
+  padding-bottom: 11px;
+}
+
+.buttonContainer{
+  display: flex;
+  flex-direction: row;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  font-weight: 900;
 }
 
-.App-link {
-  color: #61dafb;
+.buttonL ,.buttonR,.counter{
+ width: 60px;
+ height: 56px;
+ font-size: 21px;
+ font-weight: 900;
+}
+.counter{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  height: 54px;
+  background-color: #FBE8E8;
+  color: #B24242;
+  border-top:solid 1px #B24242;
+  border-bottom: solid 1px #B24242;
+}
+.buttonL{
+  background-color: #FFFFFF;
+  border-width: 1;
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+  border:solid 1px #B24242;
+  color: #B24242;
+}
+.buttonR{
+  background-color: #B24242;
+  border-width: 1;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+  border:solid 1px #B24242;
+  color:#FFFFFF;
+
+}
+.value,.loader{
+  font-size: 12px;
+  font-weight: 500;
+  font-family: Avenir;
+}
+.loader{
+display: flex;
+justify-content:space-evenly;
+margin-left: 40px;
+margin-right: 40px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.value
+{
+  padding-left: 45px;
+}
+.no-loader{
+visibility: hidden;
+}
+
+.input{
+  background-color: #FBE8E8;
+  border: none;
+  margin-right: 10px;
+  font-size: 21px;
+ font-weight: 900;
+ color: #B24242;
+ text-align: center;
+}
+
+.buttonL,.buttonL,.input:hover{
+  cursor: pointer;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
