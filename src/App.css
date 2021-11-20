@@ -89,7 +89,7 @@ visibility: hidden;
  text-align: center;
 }
 
-.buttonL,.buttonL,.input:hover{
+.buttonR,.buttonL,.input:hover{
   cursor: pointer;
 }
 input::-webkit-outer-spin-button,
