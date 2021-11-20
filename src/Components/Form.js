@@ -16,13 +16,11 @@ const Form=(props)=>{
         if(formMax!=="") 
         setMax(parseInt(formMax)) 
         else {
-            alert("Default Maximum value is 1000")
             setMax(1000)
         }
 
         if(formMin!=="") setMin(parseInt(formMin))
         else {
-            alert("Default Minimum value is -1000")
             setMin(-1000)  
         }
 
@@ -43,7 +41,6 @@ const Form=(props)=>{
                 alert("Invalid Input");
             }
         }else{
-            alert("Default counter value is 1");
             setCounter(1);
         }
 
